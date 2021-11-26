@@ -21,36 +21,40 @@
 
 
 #segunda linea de estados
-# letra = 'abcdefghijk'
-# valores = '123456789'
-# prefijos = ['un','do','tri','tetra','penta','hexa','hepta','octa','nona']
-# contador = 1
-# impresion = ''
-# finalImpresionSegunda = ''   
-# for i in range(9):
+def segundo():
+    letra = 'abcdefghijk'
+    valores = '123456789'
+    prefijos = ['un','do','tri','tetra','penta','hexa','hepta','octa','nona']
+    contador = 1
+    impresion = ''
+    finalImpresionSegunda = ''   
+    for i in range(9):
 
-#     print('(b',valores[i],'3,B)-(b14,',prefijos[i],',R)-')
-#     impresion = '(b'+valores[i]+'3,B)-(b14,'+prefijos[i]+',R)-'
-#     finalImpresionSegunda = finalImpresionSegunda +impresion
-  
-#     contador += 1
-# impresion.replace(' ','')
-# print(finalImpresionSegunda)
+        print('(d',valores[i],'3,B)-(d14,',prefijos[i],',R)-')
+        impresion = '(d'+valores[i]+'3,B)-(d14,'+prefijos[i]+',R)-'
+        finalImpresionSegunda = finalImpresionSegunda +impresion
+    
+        contador += 1
+    impresion.replace(' ','')
+    print(finalImpresionSegunda)
 
 #primera linea
-letra = 'abcdefghijk'
-valores = '123456789'
-prefijos = ['un','do','tri','tetra','penta','hexa','hepta','octa','nona']
-contador = 1
-impresion = ''
-finalImpresionSegunda = ''   
-for i in range(9):
+def primera():
+    letra = 'abcdefghijk'
+    valores = '0123456789'
+    prefijos = ['H,un','do','tri','tetra','penta','hexa','hepta','octa','nona']
+    contador = 0
+    impresion = ''
+    finalImpresionSegunda = ''   
+    for i in range(10):
 
-    print('(b',valores[i],'2,H)-(b',valores[i],'3,H,R)-')
-    impresion = '(b'+valores[i]+'2,H)-(b'+valores[i]+'3,H,R)-'
-    finalImpresionSegunda = finalImpresionSegunda +impresion
-  
-    contador += 1
-impresion.replace(' ','')
-print(finalImpresionSegunda)
-
+        print('(d',valores[i],'2,H)-(d',valores[i],'3,H,R)-')
+        impresion = '(d'+valores[i]+'2,H)-(d'+valores[i]+'3,H,R)-'
+        finalImpresionSegunda = finalImpresionSegunda +impresion
+    
+        contador += 1
+    impresion.replace(' ','')
+    print(finalImpresionSegunda)
+    
+    
+segundo()
